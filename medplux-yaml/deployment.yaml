@@ -1,21 +1,42 @@
 apiVersion: apps/v1
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
 kind: Deployment
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
 metadata:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
   name: medplux-deployment
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
   labels:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
     app: medplux
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
 spec:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
   replicas: 3
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
   selector:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
     matchLabels:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
       app: medplux
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
   template:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
     metadata:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
       labels:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
         app: medplux
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
     spec:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
       containers:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
       - name: medplux
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
         image: 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:v2
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
         ports:
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
         - containerPort: 80
+ws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 387132115905.dkr.ecr.us-east-1.amazonaws.com/mediplus:22+g
